@@ -1,0 +1,212 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Title -->
+        <title>TogglEsports</title>
+
+        <!-- STYLE SHEETS -->
+        <link rel="stylesheet" media="screen and (min-width: 2000px)" href="stylesheets/extraLarge.css">
+        <link rel="stylesheet" media="screen and (min-width: 1280px) and (max-width: 1999px)" href="stylesheets/large.css">
+        <link rel="stylesheet" media="screen and (max-width: 1279px)" href="stylesheets/small.css">
+
+        <!-- FONTS -->
+        <link href="//db.onlinewebfonts.com/c/b459103556cd3b6504b5a9fe47b8ca07?family=Swiss+721" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+    <body>
+
+        <!-- Navigation Bar -->
+    
+        <nav class="navContainer" id="home">
+            <div class="navLogoContainer">
+                <a href="index.html"><img src="resources/LogoVectorLarge.png" class="navLogo" alt="TogglEsports"></a>
+            </div>
+            
+            <button class="navText navText1" id="Home"><a class="textDeco active" href="">Home</a></button>
+            <button class="navText navText2"><a class="textDeco" href="#download">Download</a></button>
+            <button class="navText navText3"><a class="textDeco" href="contact.html">Contact Us</a></button>
+            
+            <div class="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  <ul id="menu">
+                    <a href="#home" class="textSmall smallActive"><li>Home</li></a>
+                    <a href="#download" class="textSmall"><li>Download</li></a>
+                    <a href="contact.html" class="textSmall"><li>Contact</li></a>
+                  </ul>
+                </div>
+            </div>
+
+            <div class="login">
+                <a href=""><img src="resources/loginIcon.png" class="loginIcon" alt="Login"></a>
+            </div>
+            
+        </nav>
+
+        <!-- Active Tab Script -->
+
+    <script>
+
+    var small = document.getElementsByClassName("textSmall");
+    var btns = document.getElementsByClassName("textDeco");
+
+        for (var i = 0; i < small.length; i++){
+        small[i].addEventListener("click", function() {
+            const current = document.getElementsByClassName("smallActive");
+            current[0].className = current[0].className.replace(" smallActive", "");
+            this.className += " smallActive";
+            });
+        }
+
+        for (var i = 0; i < btns.length; i++){
+        btns[i].addEventListener("click", function() {
+            const current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+            });
+        }
+
+        </script>
+
+
+    <div class="mainContainer">
+
+<!-- Banner -->
+
+        <div class="banner">
+
+            <div class="bannerTextContainer">
+                <h1 class="bannerText bannerText1">A New Tab</h1>
+                <h1 class="bannerText bannerText2">Built For The</h1>
+                <h1 class="bannerText bannerText3">Esports Fan</h1>
+            </div>
+
+            <div class="bannerLogoContainer">
+                <img src="resources/LogoVector3d.png" class="bannerLogo" alt="Toggle Logo">
+            </div>
+
+<!-- Carousel -->
+
+            <div class="carouselContainer">
+                <button class="carouselButton leftButton">&#9668;</button>
+                <div class="carouselTrackContainer">
+                    <ul class="carouselTrack">
+                        <li class="carouselSlide currentSlide visible">
+                            <img src="Images/slide-1.jpg" class="carouselImage" alt="">
+                        </li>
+                        <li class="carouselSlide hidden">
+                            <img src="Images/slide-2.jpg" class="carouselImage" alt="">
+                        </li>
+                        <li class="carouselSlide hidden">
+                            <img src="Images/slide-3.jpg" class="carouselImage" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <button class="carouselButton rightButton">&#9658;</button>
+
+                <div class="carouselNav">
+                    <button class="carouselIndicator currentNav"></button>
+                    <button class="carouselIndicator"></button>
+                    <button class="carouselIndicator"></button>
+                </div>
+            </div>
+
+        </div>
+
+
+<!-- Container 1 -->
+        <div class="homeContainer1">
+            <img src="resources/whiteDivBannerBottom.png" class="containerDividerBanner" alt="Divider">
+            
+            <div class="productDisplayContainer">
+                <img src="resources/productImage1.png" class="productDisplay1" alt="Dashboard">
+            </div>
+            
+            <div class="container1TitleContainer">
+                <h1 class="container1Title1">Esports</h1>
+                <h1 class="container1Title2">Dashboard</h1>
+            </div>
+
+            <div class="container1TextContainer">
+                <h1 class="container1Text1">Designed For Casual</h1>
+                <h1 class="container1Text2">and Devoted Esports Fans</h1>
+            </div>
+
+            <img src="resources/whiteDivConatiner2Top.png" class="containerDivider2Top" alt="Divider">
+        </div>
+
+
+<!-- Container 2 -->
+        
+
+        <div class="homeContainer2">
+            <div class="container2TextContainerTop">
+                <h1 class="container2Text1">Easy Access To</h1>
+                <h1 class="container2Text2">Live Game Stats</h1>
+            </div>
+            <div class="container2TextContainerBottom">
+                <h1 class="container2Text3">Find Previous</h1>
+                <h1 class="container2Text4">Game Stats</h1>
+            </div>
+
+            <div class="productDisplayContainer2">
+                <img src="resources/productDisplay2.png" class="productDisplay2" alt="Dashboard Stats">
+            </div>
+
+            <div class="liveButtonContainer">
+                <h1 class="liveButtonText">LIVE</h1>
+            </div>
+        </div>
+    
+
+<!-- Container 3 -->
+
+        <div class="homeContainer3" id="download">
+            <img src="resources/whiteDivConatiner2Bottom.png" class="containerDivider2Bottom" alt="Divider">
+
+            <div class="content3Container">
+                <div class="container3TextContainer">
+                    <h1 class="container3Text">Download on the Google Web Store</h1>
+                </div>     
+                <a href="google" class="linkContainer"><img src="resources/webstorebadge.png" class="webStoreBadge" alt="Web Store Badge"></a>
+                <img src="resources/LogoVector3d.png" class="container3Logo" alt="TogglEsports Logo">      
+            </div>
+                <img src="resources/blackDivFooterBottom.png" class="containerDividerFooter" alt="Divider">
+            </div>
+       
+
+
+<!-- Footer -->
+
+        <footer class="footerContainer">
+            <div class="footerNav">
+                <button class="homeFooterButton"><a class="homeFooterButton" href="#home">Home</a></button>
+                <button class="downloadFooterButton"><a class="downloadFooterButton" href="#download">Download</a></button>
+                <button class="contactUsFooterButton"><a class="contactUsFooterButton" href="contact.html">Contact Us</a></button>
+                
+            </div>
+
+            <div class="disclaimerContainer">
+                <p class="disclaimer">Esports Dashboard was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</p>
+            </div>
+        </footer>
+
+<!-- SCRIPTS -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="js/carousel.js"></script>
+
+    </body>
+
+</html>

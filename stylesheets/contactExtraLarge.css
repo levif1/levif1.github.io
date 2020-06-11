@@ -1,0 +1,317 @@
+@font-face {
+	font-family: 'Swis721-Filled';
+	src: url('../fonts/swis721_blkcn_bt_black.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Swis721-Unfilled';
+	src: url('../fonts/swis721_bdoul_bt_bold.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Swis721-Tall';
+	src: url('../fonts/swiss_721_bt.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	margin: 0px;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+}
+
+/* --- */
+/* NAVIGATION BAR */
+/* --- */
+
+.navContainer {
+	width: 100%;
+	height: 60px;
+	background-color: #55606e;
+	display: grid;
+	grid-template-rows: 60px;
+	grid-template-columns: repeat(7, 1fr);
+	min-height: 40px;
+}
+
+.navLogoContainer {
+	grid-column-start: 1;
+	grid-column-end: 3;
+	margin: auto;
+}
+
+.navLogo {
+	width: 200px;
+	filter: drop-shadow(1px 0px 1px rgba(255, 255, 255, 0.726)) drop-shadow(-1px 0px 1px rgba(255, 255, 255, 0.726));
+}
+
+.navTextContainer {
+	grid-column-start: 3;
+	grid-column-end: 6;
+	margin: auto;
+}
+
+.active {
+	text-decoration: underline !important;
+	text-decoration-color: #ff3333 !important;
+}
+
+.navText {
+	font-family: 'Swis721-Unfilled';
+	font-size: 25px;
+	color: #e6e6e2;
+	margin: auto;
+	padding: 15px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+}
+
+.textDeco {
+	text-decoration: none;
+	color: inherit;
+}
+
+.navText1 {
+	grid-column-start: 3;
+	grid-column-end: 4;
+	display: initial;
+}
+
+.navText2 {
+	grid-column-start: 4;
+	grid-column-end: 5;
+}
+
+.navText3 {
+	grid-column-start: 5;
+	grid-column-end: 6;
+}
+
+.login {
+	grid-column-start: 7;
+	grid-column-end: 8;
+	margin: auto;
+}
+
+.loginIcon {
+	height: 50px;
+	filter: invert(1);
+}
+
+.navigation {
+	display: none;
+	visibility: hidden;
+}
+
+#menuToggle {
+	display: none;
+	visibility: hidden;
+}
+
+#menu {
+	display: none;
+	visibility: hidden;
+}
+
+#menu li {
+	display: none;
+	visibility: hidden;
+}
+
+#menuToggle input:checked ~ ul {
+	display: none;
+}
+
+/* --- */
+/* WebPage Container */
+/* --- */
+
+.mainContainer {
+	background-color: #3d444d;
+	display: grid;
+	grid-template-rows: 750px 880px 630px 750px;
+}
+
+/* --- */
+/* WebPage Container */
+/* --- */
+
+.mainContainer {
+	background-color: #3d444d;
+	height: 100vh;
+	position: relative;
+}
+
+.header {
+	font-family: 'Swis721-Unfilled';
+	color: #e6e6e2;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 55px;
+	font-size: 70px;
+}
+
+.form-elements {
+	padding-top: 90px;
+	margin: auto;
+}
+
+.pure-group {
+	width: 50%;
+	margin: auto;
+	border: none;
+}
+
+#name {
+	width: 30%;
+	border: 1px solid white;
+	border-radius: 6px;
+	padding: 5px;
+	font-family: 'Swis721-Tall';
+	font-size: 15px;
+}
+
+#email {
+	width: 30%;
+	border: 1px solid white;
+	border-radius: 6px;
+	padding: 5px;
+	font-family: 'Swis721-Tall';
+	font-size: 15px;
+}
+
+#message {
+	width: 100%;
+	border: 1px solid white;
+	border-radius: 6px;
+	padding: 5px;
+	font-family: 'Swis721-Tall';
+	font-size: 15px;
+	height: 300px;
+}
+
+.sendButton {
+	margin-left: 50%;
+	transform: translateX(-50%);
+	padding: 6px;
+	padding-left: 18px;
+	padding-right: 18px;
+	border: 1px solid white;
+	border-radius: 8px;
+	font-family: 'Swis721-Tall';
+	font-size: 15px;
+}
+
+.sendButton:hover {
+	background-color: lightgrey;
+	cursor: pointer;
+}
+
+.thankyou_message {
+	margin: auto;
+}
+
+.thankYou {
+	margin-left: 50%;
+	padding-top: 15%;
+	transform: translateX(-50%);
+	font-family: 'Swis721-Tall';
+	font-size: 40px;
+	color: #e6e6e2;
+}
+
+.containerDividerFooter {
+	width: 100%;
+	margin-bottom: 0px;
+	position: absolute;
+	transform: translateY(-100%);
+	left: 0;
+	z-index: 5;
+}
+
+/* --- */
+/* footer */
+/* --- */
+
+.footerContainer {
+	height: 150px;
+	background-color: #191b1e;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr;
+	position: relative;
+}
+
+.footerNav {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 1;
+	grid-column-end: 2;
+	display: grid;
+	grid-template-rows: 1fr;
+	grid-template-columns: 35% 10% 10% 10% 35%;
+	font-family: "Swis721-Filled";
+	font-size: 15px;
+	color: #49586d;
+}
+
+.homeFooterButton {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 2;
+	grid-column-end: 3;
+	margin: auto;
+	text-decoration: none;
+	font-family: "Swis721-Filled";
+	font-size: 25px;
+	color: #49586d;
+	background-color: transparent;
+	border: none;
+}
+
+.downloadFooterButton {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 3;
+	grid-column-end: 4;
+	margin: auto;
+	text-decoration: none;
+	font-family: "Swis721-Filled";
+	font-size: 25px;
+	color: #49586d;
+	background-color: transparent;
+	border: none;
+}
+
+.contactUsFooterButton {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	grid-column-start: 4;
+	grid-column-end: 5;
+	margin: auto;
+	text-decoration: none;
+	font-family: "Swis721-Filled";
+	font-size: 25px;
+	color: #49586d;
+	background-color: transparent;
+	border: none;
+}
+
+.disclaimerContainer {
+	margin: auto;
+}
+
+.disclaimer {
+	font-family: 'Swis721-Tall';
+	font-size: 15px;
+	color: #acacac;
+}

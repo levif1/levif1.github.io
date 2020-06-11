@@ -1,0 +1,164 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Title -->
+        <title>TogglEsports</title>
+
+        <!-- STYLE SHEETS -->
+        <link rel="stylesheet" media="screen and (min-width: 2000px)" href="stylesheets/contactExtraLarge.css">
+        <link rel="stylesheet" media="screen and (min-width: 1280px) and (max-width: 1999px)" href="stylesheets/contactLarge.css">
+        <link rel="stylesheet" media="screen and (max-width: 1279px)" href="stylesheets/contactSmall.css">
+
+        <!-- FONTS -->
+        <link href="//db.onlinewebfonts.com/c/b459103556cd3b6504b5a9fe47b8ca07?family=Swiss+721" rel="stylesheet" type="text/css"/>
+
+    </head>
+
+    <body>
+
+<!-- Navigation Bar -->
+    
+<nav class="navContainer" id="home">
+  <div class="navLogoContainer">
+      <a href="index.html"><img src="resources/LogoVectorLarge.png" class="navLogo" alt="TogglEsports"></a>
+  </div>
+  
+  <button class="navText navText1" id="Home"><a class="textDeco active" href="">Home</a></button>
+  <button class="navText navText2"><a class="textDeco" href="#download">Download</a></button>
+  <button class="navText navText3"><a class="textDeco" href="contact.html">Contact Us</a></button>
+  
+  <div class="navigation">
+      <div id="menuToggle">
+        <input type="checkbox" />
+
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <ul id="menu">
+          <a href="index.html#home" class="textSmall smallActive"><li>Home</li></a>
+          <a href="index.html#download" class="textSmall"><li>Download</li></a>
+          <a href="contact.html" class="textSmall"><li>Contact</li></a>
+        </ul>
+      </div>
+  </div>
+
+  <div class="login">
+      <a href=""><img src="resources/loginIcon.png" class="loginIcon" alt="Login"></a>
+  </div>
+  
+</nav>
+
+<!-- Active Tab Script -->
+
+<script>
+
+var small = document.getElementsByClassName("textSmall");
+var btns = document.getElementsByClassName("textDeco");
+
+for (var i = 0; i < small.length; i++){
+small[i].addEventListener("click", function() {
+  const current = document.getElementsByClassName("smallActive");
+  current[0].className = current[0].className.replace(" smallActive", "");
+  this.className += " smallActive";
+  });
+}
+
+for (var i = 0; i < btns.length; i++){
+btns[i].addEventListener("click", function() {
+  const current = document.getElementsByClassName("active");
+  current[0].className = current[0].className.replace(" active", "");
+  this.className += " active";
+  });
+}
+
+</script>
+
+
+
+
+<div class="mainContainer">
+
+    <!-- START HERE -->
+   <link rel="stylesheet" href="pure.css">
+   <link rel="stylesheet" href="style.css">
+
+   
+  <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+  action="https://script.google.com/macros/s/AKfycbyWhLNkaKUjBrg_Vi0YjcANNxlMopEF0j0tp9Mz/exec ">
+    <!-- change the form action to your script url -->
+
+    <div class="form-elements">
+
+        <h1 class="header">Contact Us</h1>
+
+      <fieldset class="pure-group">
+        <label for="name"></label>
+        <input id="name" name="name" placeholder="Name" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email"></label>
+        <input id="email" name="email" type="email" value=""
+        required placeholder="Email"/>
+        
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message"></label>
+        <textarea id="message" name="message" rows="10"
+        placeholder="Type your message here..."></textarea>
+      </fieldset>
+
+
+      <button class="sendButton">Send</button>
+
+    </div>
+
+    <!-- Customise the Thankyou Message People See when they submit the form: -->
+    <div class="thankyou_message" style="display:none;">
+      <h2 class="thankYou">Thanks for contacting us! We will get back to you soon!</h2>
+    </div>
+
+  </form>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="js/form-submission-handler.js"></script>
+<!-- END -->
+
+</div>
+<img src="resources/blackDivFooterBottom.png" class="containerDividerFooter" alt="Divider">
+</div>
+
+</div>
+
+
+
+
+<!-- Footer -->
+
+
+
+<footer class="footerContainer">
+
+    <div class="footerNav">
+        <button class="homeFooterButton"><a class="homeFooterButton" href="#Home">Home</a></button>
+        <button class="downloadFooterButton"><a class="downloadFooterButton" href="#download">Download</a></button>
+        <button class="contactUsFooterButton"><a class="contactUsFooterButton" href="contact.html">Contact Us</a></button>
+        
+    </div>
+
+    <div class="disclaimerContainer">
+        <p class="disclaimer">Esports Dashboard was created under Riot Games' "Legal Jibber Jabber" policy using assets owned by Riot Games. Riot Games does not endorse or sponsor this project.</p>
+    </div>
+</footer>
+
+    </body>
+
+</html>
